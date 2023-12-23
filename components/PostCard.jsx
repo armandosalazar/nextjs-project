@@ -4,9 +4,12 @@ import Link from "next/link";
 function PostCard({ post }) {
   return (
     <div>
-      <h2>{post.title}</h2>
+      <Link href={`/posts/${post.id}`}>
+        <h3>
+          {post.id}. {post.title}
+        </h3>
+      </Link>
       <p>{post.body}</p>
-      <Link href={`/posts/${post.id}`}>More</Link>
       <br />
       <button
         onClick={() => {

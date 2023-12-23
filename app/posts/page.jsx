@@ -12,13 +12,11 @@ async function loadPosts() {
   return await response.json();
 }
 
-export default async function PostsPage() {
+export default async function Posts() {
   const posts = await loadPosts();
 
   return (
     <>
-      <h1>Posts Page</h1>
-
       {posts.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
