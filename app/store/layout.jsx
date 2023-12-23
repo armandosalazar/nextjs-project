@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Online Store",
+};
+
 export default function StoreLayout({ children }) {
   return (
     <>
