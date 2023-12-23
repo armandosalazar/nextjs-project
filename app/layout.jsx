@@ -8,7 +8,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>
+      <body
+        style={{
+          fontFamily: "sans-serif",
+        }}
+      >
         <header>
           <Navbar />
         </header>
