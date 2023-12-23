@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import { Roboto } from "next/font/google";
 
 export const metadata = {
   title: "My Next.js Site",
@@ -6,14 +7,16 @@ export const metadata = {
   keywords: "nextjs, react, seo",
 };
 
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body
-        style={{
-          fontFamily: "sans-serif",
-        }}
-      >
+      <body className={roboto.className}>
         <header>
           <Navbar />
         </header>
