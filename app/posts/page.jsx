@@ -1,4 +1,5 @@
 import PostCard from "@/components/PostCard";
+import "./page.css";
 
 export const metadata = {
   title: "Posts Page",
@@ -16,10 +17,10 @@ export default async function Posts() {
   const posts = await loadPosts();
 
   return (
-    <>
+    <section className="grid">
       {posts.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
-    </>
+    </section>
   );
 }

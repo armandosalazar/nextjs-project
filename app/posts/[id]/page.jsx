@@ -16,9 +16,9 @@ export default async function PostPage(props) {
   return (
     <>
       {Object.keys(post) != 0 ? (
-        <div>
-          <h1>{post.title}</h1>
-          <p>{post.body}</p>
+        <div className="m-4 p-5 bg-slate-950">
+          <h1 className="text-3xl font-bold pb-8">{post.title}</h1>
+          <p className="text-slate-400">{post.body}</p>
         </div>
       ) : (
         <p
@@ -32,7 +32,7 @@ export default async function PostPage(props) {
       )}
       <hr />
 
-      <h2>Others Posts</h2>
+      <h2 className="m-4 text-2xl font-bold">Others Posts</h2>
       <Suspense fallback={<p>Loading...</p>}>
         <Posts />
       </Suspense>

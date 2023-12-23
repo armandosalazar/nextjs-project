@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import { Roboto } from "next/font/google";
+import "./global.css";
 
 export const metadata = {
   title: "My Next.js Site",
@@ -16,7 +17,7 @@ const roboto = Roboto({
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={roboto.className}>
+      <body className={(roboto.className, "text-slate-300")}>
         <header>
           <Navbar />
         </header>
