@@ -4,7 +4,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="m-4">
       <h1>About</h1>
     </div>
   );

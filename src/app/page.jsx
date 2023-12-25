@@ -7,10 +7,10 @@ export const metadata = {
 export default function HomePage() {
   return (
     // Server component
-    <section>
+    <main className="m-4">
       <h1>Home Page</h1>
       {/* Client component */}
       <Users />
-    </section>
+    </main>
   );
 }

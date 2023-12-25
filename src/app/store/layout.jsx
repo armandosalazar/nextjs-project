@@ -7,13 +7,16 @@ export default function StoreLayout({ children }) {
     <>
       <nav
         style={{
-          fontFamily: "monospace",
+          display: "block",
         }}
+        className="bg-blue-950 p-4 text-slate-600"
       >
-        <h3>Categories</h3>
-        <a href="/store/electronics">Electronics</a>
+        <h3 className="font-bold text-3xl">Categories</h3>
+        <a href="/store/electronics" className="text-slate-400">
+          Electronics
+        </a>
       </nav>
-      {children}
+      <main className="p-4">{children}</main>
     </>
   );
 }
