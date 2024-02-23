@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import { Roboto } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./global.css";
 
 export const metadata = {
@@ -8,16 +8,12 @@ export const metadata = {
   keywords: "nextjs, react, seo",
 };
 
-const roboto = Roboto({
-  weight: ["100", "300", "400", "500", "700", "900"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-});
+const sans = Source_Sans_3({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={(roboto.className, "text-slate-300")}>
+      <body className={sans.className}>
         <header>
           <Navbar />
         </header>
