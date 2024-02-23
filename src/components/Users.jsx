@@ -2,12 +2,20 @@
 
 import { useEffect } from "react";
 
-function Users() {
+function UserComponent() {
   useEffect(() => {
-    console.log("Hi from Users!");
+    console.log("UserComponent mounted");
+
+    return () => {
+      console.log("UserComponent unmounted");
+    };
   }, []);
 
-  return <>Users component</>;
+  return (
+    <>
+      <h2 className="text-3xl">User Component</h2>
+    </>
+  );
 }
 
-export default Users;
+export default UserComponent;

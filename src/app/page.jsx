@@ -1,4 +1,4 @@
-import Users from "@/components/Users";
+import UserComponent from "@/components/Users";
 import Link from "next/link";
 
 export const metadata = {
@@ -8,17 +8,18 @@ export const metadata = {
 export default function Page() {
   return (
     /* Server component */
-    <main className="m-4">
-      <h1>Home Page</h1>
+    <main className="m-4 rounded-sm bg-blue-300 p-5">
+      <h1 className="text-4xl font-bold">Home Page</h1>
+      <section className="px-4">
+        <ul>
+          <li className="list-disc">
+            <Link href="/first-project">Primer proyecto</Link>
+          </li>
+        </ul>
+      </section>
       {/* Client component */}
-      <Users />
+      <UserComponent />
       {/* Client component */}
-      <br />
-      <ul>
-        <li className="list-disc">
-          <Link href="/first-project">Primer proyecto</Link>
-        </li>
-      </ul>
     </main>
     /* Server component */
   );
