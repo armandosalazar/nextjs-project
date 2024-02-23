@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import { Source_Sans_3 } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./global.css";
 
 export const metadata = {
@@ -8,12 +8,12 @@ export const metadata = {
   keywords: "nextjs, react, seo",
 };
 
-const sans = Source_Sans_3({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"], weight: ["400"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={sans.className}>
+      <body className={(openSans.className, "scrollbar-hide")}>
         <header>
           <Navbar />
         </header>

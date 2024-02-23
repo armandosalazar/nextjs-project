@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     /* Server component */
-    <main className="m-4 rounded-sm bg-blue-300 p-5">
+    <main className="m-4 rounded-md border-2  border-solid border-sky-200 p-5">
       <h1 className="text-4xl font-bold">Home Page</h1>
       <section className="px-4">
         <ul>

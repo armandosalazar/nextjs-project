@@ -3,9 +3,9 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="py-5">
+    <nav>
       <Link href="/">
-        <h1 className="text-3xl font-bold">NextJs</h1>
+        <h1 className="text-3xl font-bold">Proyecto NextJS</h1>
       </Link>
       <ul>
         <li>

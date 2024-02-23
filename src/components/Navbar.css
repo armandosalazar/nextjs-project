@@ -1,13 +1,14 @@
 nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding: 0.5rem;
+  /* border-bottom: 1px solid #ddd; */
+  padding: 1rem 3rem;
+  outline: 1px dashed lightcoral;
 }
 
 nav ul {
   display: flex;
-  list-style: none;
+  /* list-style: none; */
   margin-left: auto;
 }
 

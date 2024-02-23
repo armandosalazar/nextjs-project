@@ -14,11 +14,11 @@ async function Page() {
   return (
     <main className="container m-2">
       <h1 className="text-3xl font-bold">Primer proyecto</h1>
-      <main>
+      <section>
         {users.map((user) => (
           <UserCard key={user.id} user={user} />
         ))}
-      </main>
+      </section>
     </main>
   );
 }
