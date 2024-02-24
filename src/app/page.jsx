@@ -15,6 +15,9 @@ export default function Page() {
           <li className="list-disc">
             <Link href="/first-project">Primer proyecto</Link>
           </li>
+          <li className="list-disc">
+            <Link href="/prisma">Prisma</Link>
+          </li>
         </ul>
       </section>
       {/* Client component */}
