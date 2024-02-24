@@ -8,7 +8,7 @@ export const metadata = {
   keywords: "nextjs, react, seo",
 };
 
-const openSans = Open_Sans({ subsets: ["latin"], weight: ["400"] });
+const openSans = Open_Sans({ subsets: ["latin"], weight: ["300"] });
 
 export default function RootLayout({ children }) {
   return (

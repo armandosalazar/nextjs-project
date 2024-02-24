@@ -1,4 +1,4 @@
-import UserComponent from "@/components/Users";
+import UserComponent from "@/components/UserComponent";
 import Link from "next/link";
 
 export const metadata = {
