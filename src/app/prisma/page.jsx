@@ -43,19 +43,19 @@ function Page(props) {
 
   return (
     <div className="container m-auto">
-      <section className="my-4 rounded-sm border-2 border-solid border-gray-300 px-4 py-6">
+      <section className="my-4 rounded-md border border-solid border-gray-300 px-4 py-6">
         <form onSubmit={handleCreateUser} className="flex flex-col gap-4">
           <input
             type="text"
             placeholder="name"
             name="name"
-            className="rounded-md border-2 border-solid border-gray-300 p-2 outline-sky-400"
+            className="rounded-md border border-solid border-gray-300 p-2 outline-sky-400"
           />
           <input
             type="text"
             placeholder="email"
             name="email"
-            className="rounded-md border-2 border-solid border-gray-300 p-2 outline-sky-400"
+            className="rounded-md border border-solid border-gray-300 p-2 outline-sky-400"
           />
           <input
             type="submit"
@@ -64,7 +64,7 @@ function Page(props) {
           />
         </form>
       </section>
-      <section className="my-4 rounded-md border-2 border-solid border-gray-300 px-4 py-6">
+      <section className="my-4 rounded-md border border-solid border-gray-300 px-4 py-6">
         <pre>
           <code>{JSON.stringify(users, null, 2)}</code>
         </pre>
