@@ -3,7 +3,7 @@ import Link from "next/link";
 function UserCard({ user }) {
   return (
     <Link href={`/first-project/${user.id}`}>
-      <article className="my-4 flex items-center rounded-sm bg-sky-200 p-4">
+      <article className="flex items-center rounded p-4 shadow">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={user.avatar}

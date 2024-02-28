@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 
-const Prisma = new PrismaClient();
+// Create a singleton instance of PrismaClient
+const prisma = new PrismaClient();
 
-export default Prisma;
+export default prisma;

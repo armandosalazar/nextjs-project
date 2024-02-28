@@ -1,13 +1,12 @@
 import Link from "next/link";
-import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav>
+    <nav className="flex items-center justify-between bg-white p-5 shadow">
       <Link href="/">
         <h1 className="text-3xl font-bold">Proyecto NextJS</h1>
       </Link>
-      <ul>
+      <ul className="flex [&>li]:mr-2">
         <li>
           <Link href="/">Home</Link>
         </li>

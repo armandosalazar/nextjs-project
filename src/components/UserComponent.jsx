@@ -13,7 +13,7 @@ function UserComponent() {
 
   return (
     <section>
-      <h2 className="text-3xl">User Component</h2>
+      <p>Componente de usuario</p>
     </section>
   );
 }

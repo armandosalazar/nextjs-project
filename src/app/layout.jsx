@@ -8,12 +8,19 @@ export const metadata = {
   keywords: "nextjs, react, seo",
 };
 
-const openSans = Open_Sans({ subsets: ["latin"], weight: ["300"] });
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700", "800"],
+});
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={(openSans.className, "scrollbar-hide")}>
+      <body
+        className={[openSans.className, "bg-slate-50", "scrollbar-hide"].join(
+          " ",
+        )}
+      >
         <header>
           <Navbar />
         </header>

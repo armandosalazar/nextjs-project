@@ -42,8 +42,8 @@ function Page(props) {
   }
 
   return (
-    <div className="container m-auto">
-      <section className="my-4 rounded-md border border-solid border-gray-300 px-4 py-6">
+    <div className="container m-auto grid grid-cols-1 md:grid-cols-2 md:gap-4">
+      <section className="my-4 rounded-md border border-solid border-gray-50 px-4 py-6 shadow">
         <form onSubmit={handleCreateUser} className="flex flex-col gap-4">
           <input
             type="text"
@@ -60,11 +60,11 @@ function Page(props) {
           <input
             type="submit"
             value={"Create user"}
-            className="rounded-md bg-sky-400 px-3 py-2 text-white"
+            className="rounded-md bg-sky-400 px-3 py-2 text-white hover:bg-sky-950"
           />
         </form>
       </section>
-      <section className="my-4 rounded-md border border-solid border-gray-300 px-4 py-6">
+      <section className="my-4 rounded-md border border-solid border-gray-50 px-4 py-6 shadow">
         <pre>
           <code>{JSON.stringify(users, null, 2)}</code>
         </pre>
