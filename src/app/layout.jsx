@@ -17,9 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body
-        className={[openSans.className, "bg-slate-50", "scrollbar-hide"].join(
-          " ",
-        )}
+        className={[
+          openSans.className,
+          "bg-slate-50",
+          "scrollbar-hide",
+          "h-screen",
+          "flex",
+          "flex-col",
+        ].join(" ")}
       >
         <header>
           <Navbar />

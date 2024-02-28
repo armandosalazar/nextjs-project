@@ -5,8 +5,8 @@ export default function AboutPage() {
   const router = useRouter();
 
   return (
-    <main className="m-4">
-      <h1 className="text-3xl my-5">About</h1>
+    <main className="container mx-auto my-4 rounded bg-white p-5 shadow">
+      <h1 className="my-5 text-3xl font-bold">About</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
         similique deleniti necessitatibus ducimus voluptatem tenetur error
@@ -14,8 +14,10 @@ export default function AboutPage() {
         laudantium laboriosam quidem vel.
       </p>
 
+      <hr className="my-5" />
+
       <button
-        className="bg-sky-400 py-2 px-3 rounded-md text-white my-2"
+        className="my-2 rounded-md bg-sky-400 px-3 py-2 text-white"
         onClick={() => {
           // Execute logic before leaving the page
           alert("You are leaving the page");
