@@ -7,21 +7,20 @@ function PostCard({ post }) {
   console.log("params", params);
 
   return (
-    <div className="bg-gray-950 p-10">
+    <div className="border bg-white p-5">
       <Link href={`/posts/${post.id}`}>
-        <h3 className="text-xl font-bold mb-4">
+        <h3 className="mb-4 text-xl font-bold">
           {post.id}. {post.title}
         </h3>
       </Link>
-      <p className="text-slate-300">{post.body}</p>
-      <br />
-      <button
-        onClick={() => {
-          console.log(`Clicked on post ${post.id}`);
-        }}
+      <p>{post.body}</p>
+      <hr className="my-5" />
+      <Link
+        href={`/posts/${post.id}`}
+        className=" cursor-pointer font-bold text-green-500"
       >
-        Emmit event
-      </button>
+        More info
+      </Link>
     </div>
   );
 }

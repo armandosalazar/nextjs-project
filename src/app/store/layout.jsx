@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function Layout({ children }) {
   return (
-    <section className="m-4 flex h-fit flex-1 gap-4">
+    <main className="m-4 flex h-fit flex-1 gap-4">
       <nav className="flex w-fit flex-col rounded bg-yellow-50 p-10 shadow">
         <h3 className="text-3xl font-bold">Categories</h3>
         <ul className="list-disc pl-4 [&>li]:underline">
@@ -20,6 +20,6 @@ export default function Layout({ children }) {
       </nav>
 
       {children}
-    </section>
+    </main>
   );
 }

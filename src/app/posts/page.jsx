@@ -1,5 +1,4 @@
 import PostCard from "@/components/PostCard";
-import "./page.css";
 
 export const metadata = {
   title: "Posts Page",
@@ -8,7 +7,7 @@ export const metadata = {
 async function loadPosts() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
 
-  // await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return await response.json();
 }
@@ -17,10 +16,10 @@ export default async function Posts() {
   const posts = await loadPosts();
 
   return (
-    <section className="grid">
+    <main className="container mx-auto my-4 grid grid-cols-3 gap-4">
       {posts.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
-    </section>
+    </main>
   );
 }
